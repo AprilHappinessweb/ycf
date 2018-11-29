@@ -1,0 +1,396 @@
+/***********************************************************登录页主体的默认设置***********************************************************/
+body{
+    font-size:14px;
+    color:#999999;
+    width:100%;
+    min-width:1200px;
+    background:#FFFFFF;
+    user-select: none;/*用户在点击页面文字时无法复制*/
+}
+  /*所有a标签的默认设置*/
+  a{
+    color:#F36E27;    
+    text-decoration:none;
+  }
+  /***********************************************************设置登录页头部样式***********************************************************/
+  header{
+    width:100%;
+    background:#FFFFFF;
+  }
+  /*设置登录页div名为header的样式*/
+  .reg-header{
+    width:1200px;
+    height:80px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top:15px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  /*设置头部第一部分logo的样式*/
+  .logo{
+    width:240px ;
+    height: 64px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 5px;
+  }
+  .logo img {
+    width: 138px;
+    height: 48px;
+    padding-right: 8px;
+    border-right: 1px solid #F36E27;
+  }
+  .logo span{
+    color: #F36E27;
+    font-size: 20px;
+    position:absolute;
+    top:10px;
+    left: 155px;
+  }
+/*设置头部第二部分hotline的样式*/
+  .hotline{
+    width:510px;
+    height:36px;
+    line-height: 36px;
+    margin-top: 7px;
+    position:relative;
+    overflow: hidden;
+  }
+  .hotline a img{
+    position:absolute;
+    top:0px;
+    left:0px;
+  }
+  .hotline span:first-of-type{
+    font-size: 14px;
+    top:0px;
+    left:70px;
+    position:absolute;
+  }
+  .hotline span:last-of-type{
+    font-size: 24px;
+    color: #F36E27;
+    padding-left:160px;
+  }
+/*设置头部第三部分hotline的样式*/
+  .login{
+    height:26px;
+    line-height: 26px;
+    margin:12px 5px 0px 0px;
+  }
+.login a{
+  color: #F36E27;
+  font-size: 12px;
+  border: solid 1px #F36E27;
+  border-radius: 20px;
+  padding:5px 10px ;
+  margin-left:20px;
+}
+/***********************************************************设置内容主体的样式***********************************************************/
+section{
+  width:100%;
+  background:#F5F5F5;
+  border-top:1px solid #F5F5F5;
+  border-bottom:1px solid #F5F5F5;
+}
+/*设置登录页div名为section的样式*/
+.reg-section{
+  width:1200px;
+  margin:16px auto;
+  overflow: hidden;
+  background:#FFFFFF; 
+}
+.reg-title{
+  width:100%;
+  height: 45px;
+  font-size: 30px;
+  color: #666666;
+  text-align: center;
+  line-height:45px;
+  padding-top: 28px;
+}
+/*注册流程的样式的开始*/
+.reg-step{
+    display:flex;
+    justify-content: space-between;
+    width:714px;
+    margin:25px auto;
+}
+/*箭头框的共同样式的开始*/
+.container{
+    display: flex;
+}
+.arrow-footer{
+    width:0px;
+    height:0px;
+    border:21px solid transparent;
+    border-left:11px solid transparent;
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent #FFFFFF;
+    position: absolute;
+    top:0;
+    left:0px;
+    z-index:2;
+}
+.part-left{
+    position:relative;
+    width:170px;
+    height:42px;
+    z-index:2;           
+}
+.box{
+    width:170px;
+    height:42px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.content{
+    width:169px;
+    height:40px;
+    position:absolute;
+    top:1px;
+    left:1px;
+    text-align: center;
+    line-height: 40px;
+}
+.part-right{
+    position: relative;
+    z-index: 1;
+}
+.box-arrow{
+    width:0px;
+    height:0px;
+    border:21px solid transparent;
+    border-left:11px solid transparent;
+    border-style: dashed dashed dashed solid;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.arrow{
+    width:0px;
+    height:0px;
+    border:21px solid transparent;
+    border-left:11px solid transparent;
+    border-style: dashed dashed dashed solid;
+
+    position: absolute;
+    top:0;
+    left:-1.2px;
+}
+/*箭头框的共同样式的结束*/   
+/*箭头框的不同样式的结束*/
+.bg-default-one{
+    background:#FFC5A5;
+}
+.bg-default-two{
+    background:#FEF4EE;
+}
+.bg-other{
+    background: #F5F5F5;
+}
+.bc-default-one{
+    border-color: transparent transparent transparent #FFC5A5;
+}
+.bc-default-two{
+    border-color: transparent transparent transparent #FEF4EE;
+}
+.bc-default-other{
+    border-color: transparent transparent transparent #F5F5F5;
+}
+.content-color{
+    color:#F36E27;
+}
+/*箭头框的不同样式的结束*/ 
+/*注册流程的样式的结束*/
+/*投资人选项的样式的开始*/
+.reg-info-options{
+  width: 516px;
+  height: 44px;
+  margin: 0 auto;
+}
+.reg-info-options span{
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  padding-left:36px;
+  box-sizing: border-box;
+  color: #666666;
+}
+.reg-info-options span:first-child{
+  color: #F36E27;
+}
+.reg-info-options span::before{
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  border: 1px solid #D8D8D8;
+  position: relative;
+  top: 4px;
+  border-radius: 50%;
+  transition: all .2s;
+}
+.reg-info-options span:first-child::before{
+  border-width: 6px;
+  border-color: #F36E27;
+  box-sizing: border-box;
+  margin-left: 90px;
+}
+/*投资人选项的样式的结束*/
+/*注册(手机...邀请码)的开始*/
+/*注册(手机...邀请码)的共性样式*/
+.reg-infos{
+  width: 516px;
+  height: 44px;
+  margin: 16px auto;  
+}
+.reg-infos span{
+  color:#666666;
+  margin-right:16px;
+  display: inline-block;
+  height: 42px;
+}
+.reg-infos .span-m-1::before,.span-m-2::before,.span-m-3::before{
+  content: "*";
+  color:#F36E27;
+}
+.reg-infos input{
+  height:42px;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+  padding-left: 16px;
+  line-height: 42px;
+}
+.reg-infos input::-webkit-input-placeholder{
+  line-height: 42px;
+  color:#D6D6D6;
+  font-size: 14px;
+}
+.reg-infos input:focus{
+  outline:none;
+  border: 1px solid #F36E27;
+}
+/*注册(手机...邀请码)的不同样式*/
+.span-m-1{
+  margin-left:42px;
+}
+.input-w-1{
+  width: 338px;
+}
+.span-m-2{
+  margin-left:56px;
+}
+.input-w-2{
+  width: 206px;
+}
+.span-m-3{
+  margin-left:28px;
+}
+.span-m-4{
+  margin-left:25px;
+}
+/*注册(手机...邀请码)的结束*/
+/*条款样式的开始*/
+.reg-clause{
+  width:384px;
+  font-size: 12px;
+  display: flex;
+  margin-left: 466px;
+  margin-top:18px;
+}
+.reg-clause div:first-child{
+  width: 14px;
+  height: 14px;
+  background-color: #eeeeee;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.reg-clause div:first-child{
+  background-color: #EEEEEE;
+  position: relative;
+}
+.reg-clause div:first-child img{
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+.reg-clause div:last-child{
+  padding-left:5px;
+}
+/*条款样式的结束*/
+/*立即注册的开始*/
+.reg-button{
+  width: 384px;
+  height:44px;
+  display: flex;
+  justify-content: space-between;
+  margin:18px 0px 40px 466px;
+}
+.reg-button div{
+  width:182px;
+  height:42px;
+  background: #FFF6F0;
+  text-align: center;
+  line-height: 44px;
+  border:1px solid #F36E27;
+  border-radius: 3px;
+  color:#F36E27;
+  cursor: pointer;
+}
+.reg-button div:first-child{
+  background: #F36E27;
+  color:#FFFFFF ;
+}
+/*立即注册的结束*/
+/***************************************************************************设置登录页尾部样式***********************************************************/
+footer{
+  width:100%;
+  background:#FFFFFF;
+}
+.reg-footer{
+  width:1200px;
+  margin: 0 auto;
+  display:flex;
+  padding:30px 0px;
+  color:#666;
+}
+/*联系客服*/
+.service-number{
+  width:512px;
+  height:50px;
+  background:url(../images/phone.png) no-repeat left center;
+  padding-left:65px; 
+  box-sizing:border-box;/*把padding装进盒子里*/
+  font-family: "Arial";
+  display:flex;
+  line-height: 50px;
+  margin-left: 20px;
+}
+.service-number p:last-child{
+  font-size: 28px;
+  padding-left: 10px;
+}  
+/*分割图标*/
+.split-icon{
+  width:20px;
+  height:35px;
+  background:url(../images/split-icon.png);
+  margin:0px 10px;
+}
+/*声明版权*/
+.copyright{
+  height:50px;
+  line-height:22px;
+}
+.copyright>a{
+  color:#666;
+}
+/*结束*/
+

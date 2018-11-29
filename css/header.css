@@ -1,0 +1,326 @@
+/*客户端主体的默认设置*/
+body{
+    font-size:14px;
+    color:#666666;
+    width:100%;
+    min-width:1200px;
+    background:#FFFFFF;
+  }
+
+  /*所有a标签的默认设置*/
+  a{
+    color:#666666;
+    text-decoration:none;
+  }
+  a:hover{
+    color:#F36E27;
+  }
+/*---------------------------头部的样式----------------------------*/
+.web-header{
+    width:1200px;
+    height:88px;
+    margin:0 auto;
+    display: flex;
+}
+/*3-1头部logo的样式*/
+.header-logo a img{
+    width: 420px;
+    height:62px;
+    margin-top:24px;
+}
+/*3-2头部搜索的样式*/
+.header-search{
+    margin:28px 0px 0px 40px;
+    display: flex;
+}
+.header-search-option{
+    width:100px;
+    height:40px;
+    border:1px solid #D7D7D7;
+    line-height: 40px;
+    text-align: center;    
+    border-radius:5px 0px 0px 5px ;
+    background:linear-gradient(to bottom, #FEFEFE 0%,#F6F6F6 100%);
+    cursor: pointer;
+    position: relative;
+}
+.header-search-option span{
+    /* background:url(../images/down-ty.png) no-repeat 60px 8px; */
+    padding-right:14px;
+}
+.span-top{
+    background:url(../images/down-ty.png) no-repeat 60px 8px;
+}
+/* JS效果:下拉搜索列表(开始) */
+.header-search-option ul{
+    display: none;
+} 
+.span-list{
+    background:url(../images/top-ty.png) no-repeat 60px 8px;
+}
+.span-list+ul{
+  display: block;
+  position: absolute;
+  left:-12px;
+  top:38px;
+  width:127px;
+  background:url(../images/bg-option-list.png) no-repeat;
+  z-index: 9999;
+  padding-top:15px;
+  color: #9d9d9d;
+}
+.span-list+ul li{
+    width:93%;
+    margin-left:6px;
+    cursor: pointer;
+    border-bottom: 1px dashed #f5f5f5;
+    line-height: 40px;
+}
+.span-list+ul li:hover{
+    background: #f5f5f5;
+    color:#000;
+}
+/* JS效果:下拉搜索列表(结束) */
+.header-search-text{
+    width:420px;
+    height:40px;
+    display: flex;
+    justify-content: space-between;
+    background: #F7F7F7;
+    color:#999;
+    position: relative;
+}
+.tbc{
+    border-top:1px solid #D7D7D7; 
+    border-bottom:1px solid #D7D7D7;
+}
+.tbc2{
+    border-top:1px solid #f36e27; 
+    border-bottom:1px solid #f36e27;
+    background: #FFFFFF;
+}
+.header-search-text>input{
+    width:257px;
+    border:0px;
+    outline:none;
+    padding-left:10px;
+    background:transparent;
+}
+.header-search-text>input::-webkit-input-placeholder{
+    color: #999;
+}
+.header-search-text>input::-moz-input-placeholder{
+    color: #999;
+}
+.header-search-text>input:-moz-input-placeholder{
+    color: #999;
+}
+.header-search-text>input:-ms-input-placeholder{
+    color: #999;
+}
+.header-search-text>span{
+    display: inline-block;
+    width:150px;
+    height:24px;
+    line-height: 24px;
+    text-align: center;
+    margin-top:8px;
+    margin-right:5px;
+    background: #E7E7E7;
+    border-radius:4px;
+    cursor: pointer;
+    font-size:12px;
+}
+/* 搜索栏输入框点击后的效果的开始 */
+.tbc ul{
+    display: none;
+} 
+.tbc2>input+ul{
+  display: block;
+  position: absolute;
+  left:-1px;
+  top:40px;
+  width:420px;
+  border:1px solid #D7D7D7;
+  background:#FFFFFF;
+  z-index: 9999;
+  user-select: none;
+}
+.tbc2>input+ul li{
+    width:98%;
+    height:26px;
+    padding-left:4px;
+    margin-left:2px;
+    border-bottom: 1px dashed #f5f5f5;
+    line-height: 26px;
+}
+.tbc2>input+ul li a{
+    color:#232323;
+}
+.tbc2>input+ul li:hover{
+    background: #f5f5f5;
+    cursor: pointer;
+}
+.tbc2>input+ul li:first-child{
+    background: #f5f5f5;
+    cursor:default;
+    color:#232323;
+}
+/* 搜索栏输入框点击后的效果的结束 */
+.header-search-icon{
+    width: 38px;
+    height:40px;
+    background-color: #f36e27;
+    border: 1px solid #f36e27;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.header-search-icon:hover{
+    background: #FD8542;
+}
+.header-search-icon img{
+    display: block;
+    width:18px;
+    height:18px;
+    position: absolute;
+    top:10px;
+    left:11px;
+}
+/*3-3头部用户部分*/
+.header-user{
+    width:178px;
+    height:42px;
+    line-height:36px;
+    margin:31px 0px 0px 0px;
+    display: flex;
+    justify-content:space-around;
+}
+.header-user a{
+    color:#f56e27;
+  }
+.header-user .user_login{
+    background:url("../images/login-ico.jpg") no-repeat 10px 2px;
+    padding-left:30px;
+}
+/*---------------------------导航的样式----------------------------*/
+nav{
+    width:1200px;
+    height:62px;
+    margin:0 auto;
+  }
+  nav ul{
+      position: relative;
+  }
+  nav>ul>li{
+    width:120px;
+    height:40px;
+    font-size: 16px;
+    float:left;
+    text-align:center;
+    margin-top: 20px;
+  }
+  nav>ul>li>a{
+    display: inline-block;
+    height:40px;
+    line-height: 40px;
+  }
+  nav>ul>li>a:hover{
+    border-bottom: 2px solid #F36E27; 
+  }
+  nav>ul>li>a>span{
+        color:#F36E27;
+        font-weight: bold;
+  }
+  /*首页栏*/
+  .home-page{
+        width:90px;
+  }
+  .home-page a{
+        width:72px;
+        color:#F36E27;
+        border-bottom: 2px solid #F36E27; 
+  }
+  /*导航模块设置*/
+  .nav-hot{
+        display:none;
+        position: absolute;
+        top: 65px;
+        width:520px;
+        height:280px;
+        overflow: hidden;
+        background:#FFFFFF;
+        box-shadow:0px 0px  1px 1px #DEDEDE;
+        padding-top: 20px;
+        box-sizing: border-box;
+        z-index: 999;
+    }
+    .nav-hot-trust{    
+        left: 0px;       
+    }
+    .nav-hot-management{
+        left: 40px;        
+    }
+    .nav-hot-Sfund{
+        left: 280px;          
+    }
+    .nav-hot-insurance{
+        display: none;
+        width:100px;
+        height:40px;
+        position: absolute;
+        top:65px;
+        left:700px;
+        text-align: center;
+        line-height: 40px;
+        background:#FFFFFF;
+        box-shadow:0px 0px  1px 1px #DEDEDE;
+        z-index: 999;
+    }
+    .nav-hot h4{
+        font-size:16px;
+        margin:0px 0px 0px 28px;
+    }
+    .nav-hot ul{
+        list-style: none;
+        margin:0px;
+    }
+    .nav-hot hr{
+        width : 80px;
+        border:1px solid #666666;
+        text-align: left;
+        margin-left: 28px;
+    }
+    .nav-hot a:hover{
+        text-decoration:underline;
+    }
+    .nav-hot-organization {
+        width:280px;
+        height:220px;
+        border-right:2px dashed #DEDEDE;
+        line-height: 30px;
+        float: left;
+    }
+    .nav-hot-organization ul{
+        width: 90%;
+        margin-left: 10%
+    }
+    .nav-hot-organization ul:last-child li{
+        width: 50%;
+        float: left;
+    }
+    .nav-hot-tag{
+        width: 238px;
+        height:220px;
+        line-height: 30px;
+        float: left;
+    }
+    .nav-hot-tag ul{
+        width: 87%;
+        margin-left: 13%;
+    }
+    .nav-hot-tag ul li{
+        float: left;
+        width: 50%
+    }
