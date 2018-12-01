@@ -63,4 +63,4 @@ CREATE TABLE product(
 
 INSERT INTO users VALUES(null,"Tom","18866669999","t123456","zk,self"),
                         (null,"Jerry","18899996666","123456j","zk,ogn"),
-			(null,"Marry","18877779999","123m456","agent")
+			(null,"Marry","18877779999","123m456","lcs")

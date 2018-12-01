@@ -77,21 +77,29 @@ body{
     background: rgba(0,0,0,0.2);
     color:#FFF;
   }
+  /* 点击切换后的样式 */
+  .zkchange{
+    background: rgba(0,0,0,0.2);
+    color:#FFF;
+    }
+   .lcschange{
+    border-top:2px solid #F36E27; 
+    background: #FFF;
+    color:#F36E27;   
+   }
   /*用户登录*/
   .box-login{
       width:320px;
-      height:270px;
       background:#FFF;
   }
   /*提示文本*/
   .hint-text{
       width:294px;
-      height:30px;
       margin-left:13px;
-      line-height: 30px;
+      padding:6px 0px;
+      line-height: 16px;
       color:#FF0000;
       font-size: 12px;
-      visibility: hidden;
   }
   /*登录手机*/
   .login-phone{
@@ -125,12 +133,12 @@ body{
         display: flex;
         margin-bottom:25px;
     }
-    /*登录手机的图标*/
+    /*登录密码的图标*/
     .login-pwd>span{
         display:inline-block;
         width:37px;
         height:40px;
-        background:url(../images/mobileicon.png) no-repeat center center;
+        background:url(../images/passwordicon.png) no-repeat center center;
     }
     /*登录手机的输入框*/
     .login-pwd>input{
@@ -204,6 +212,25 @@ body{
         background:url(../images/winxin-icon.png) no-repeat left center;
         padding-left: 98px;
         box-sizing:border-box;/*把padding装进盒子里*/
+        position: relative;
+    }
+    .focuswx img{
+        display: none;
+        width:90%;
+        height: 90%;
+        margin: 5%;
+    }
+    .wechat:hover .focuswx{
+        position: absolute;
+        top: -201px;
+        left: -30px;
+        width: 170px;
+        height:170px;
+        z-index: 999;
+        background:#FFF;
+    }
+    .wechat:hover .focuswx img{
+        display: block;
     }
     .wechat:hover{
         cursor: pointer;
