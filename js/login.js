@@ -1,4 +1,4 @@
-//理财师和投资人登录切换
+//功能一:登录切换
 var zkDiv=document.getElementsByClassName("zk-title")[0];
 var lcsDiv=document.getElementsByClassName("lcs-title")[0];
 var section=document.getElementsByTagName("section")[0];
@@ -18,7 +18,7 @@ lcsDiv.onclick=function(){
     userClass="lcs";
 }
 
-//验证功能
+//功能二:验证功能
 var input=document.getElementsByTagName("input");
 var phoneInput=input[0];
 var passwordInput=input[1];
