@@ -15,7 +15,7 @@ CREATE TABLE users(
     uid INT PRIMARY KEY AUTO_INCREMENT,         #用户id
     uname VARCHAR(20),                          #用户姓名
     phone VARCHAR(20),                          #用户手机号
-    password VARCHAR(20),                       #用户密码
+    upwd VARCHAR(20),                       #用户密码
     userClass VARCHAR(128)                      #用户类型:理财师或投资人(个人或机构)
 );
 
@@ -61,6 +61,6 @@ CREATE TABLE product(
     classid	INT 				#产品类别
 );
 
-INSERT INTO users VALUES(null,"Tom","18866669999","t123456","zk,self"),
-                        (null,"Jerry","18899996666","123456j","zk,ogn"),
-			(null,"Marry","18877779999","123m456","lcs")
+INSERT INTO `users`(`uid`,`uname`,`phone`,`upwd`,`userClass`) VALUES(null,"Tom","18866669999","t123456","zk,self"),
+(null,"Jerry","18899996666","123456j","zk,ogn"),
+(null,"Marry","18877779999","123m456","lcs");
