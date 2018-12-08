@@ -220,7 +220,7 @@ section{
   box-sizing: border-box;
   color: #666666;
 }
-.reg-info-options span:first-child{
+.reg-info-options .sel{
   color: #F36E27;
 }
 .reg-info-options span::before{
@@ -236,10 +236,16 @@ section{
   transition: all .2s;
 }
 .reg-info-options span:first-child::before{
+  /* border-width: 6px;
+  border-color: #F36E27;
+  box-sizing: border-box; */
+  margin-left: 90px;
+}
+.reg-info-options .sel::before{
+  content: "";
   border-width: 6px;
   border-color: #F36E27;
   box-sizing: border-box;
-  margin-left: 90px;
 }
 /*投资人选项的样式的结束*/
 /*注册(手机...邀请码)的开始*/
@@ -271,7 +277,7 @@ section{
   color:#D6D6D6;
   font-size: 14px;
 }
-.reg-infos input:focus{
+.reg-infos input:hover,.reg-infos input:focus{
   outline:none;
   border: 1px solid #F36E27;
 }

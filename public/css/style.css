@@ -1,20 +1,3 @@
-/*客户端主体的默认设置*/
-body{
-  font-size:14px;
-  color:#666666;
-  width:100%;
-  min-width:1200px;
-  background:#FFFFFF;
-  user-select: none;
-}
-/*所有a标签的默认设置*/
-a{
-  color:#666666;
-  text-decoration:none;
-}
-a:hover{
-  color:#F36E27;
-}
 /*所有分割线的默认设置*/
 hr{
   border-top:1px solid #E5E5E5;
@@ -22,6 +5,7 @@ hr{
 /*********************************************************************内容主体*********************************************************************/
 /*广告轮播图*/
 .banner{
+  margin-top:10px;
   width:100%;
   height:345px;
   background:url(../images/banner1.jpg) no-repeat center center;
