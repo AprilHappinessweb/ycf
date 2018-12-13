@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <style>
+        /*热点专题*/
+        .hot-topic {
+            width: 1200px;
+            height: 70px;
+            line-height: 70px;
+            color: #999;
+            font-size: 20px;
+            margin: 0 auto;
+        }
+
+        .hot-topic-list {
+            width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hot-topic-img{
+            width: 500%;
+            height: 160px;
+        }
+
+        .hot-topic-img a{
+            display: inline-block;
+            margin-right: 10px;
+            width: 288px;
+            height:160px;
+            overflow: hidden;
+        }
+
+        .hot-topic-img a img{
+            width:100%;
+            height:100%;
+            transition: all linear 0.1s;
+        }
+
+        .hot-topic-img a:hover img{
+            width:112%;
+            height:112%;
+            margin-top: -6%;
+            margin-left: -6%;
+        }
+
+        .list-button {
+            width: 60px;
+            height: 60px;
+            border-radius: 60px;
+        }
+        .button-left {
+            position: absolute;
+            top: 50px;
+            left: 5px;
+            background: url(images/IconCollection.png) no-repeat -10px -52px;
+            display:none;
+        }
+
+        .button-right {
+            position: absolute;
+            top: 50px;
+            right:5px;
+            background: url(images/IconCollection.png) no-repeat -144px -52px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--热点专题-->
+    <div class="hot-topic">热点专题</div>
+    <div class="hot-topic-list">
+        <div class="hot-topic-img">
+            <a href=""><img src="images/hot-topic1.jpg" alt="经济是如何运行的"></a> 
+            <a href=""><img src="images/hot-topic2.jpg" alt="一图带你轻松看懂金交所"></a> 
+            <a href=""><img src="images/hot-topic3.jpg" alt="私募股权投资,尽享经济转型下的时代红利"></a> 
+            <a href=""><img src="images/hot-topic4.jpg" alt="中国发展人工智能的4大优势"></a> 
+            <a href=""><img src="images/hot-topic5.jpg" alt=""></a> 
+            <a href=""><img src="images/hot-topic6.jpg" alt=""></a> 
+            <a href=""><img src="images/hot-topic7.jpg" alt=""></a> 
+            <a href=""><img src="images/hot-topic8.jpg" alt=""></a> 
+        </div>
+        <div class="list-button button-left"></div>
+        <div class="list-button button-right"></div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
