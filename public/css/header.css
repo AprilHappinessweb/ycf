@@ -209,6 +209,7 @@ nav{
     width:1200px;
     height:62px;
     margin:0 auto;
+    padding-bottom:10px;
   }
   nav ul{
       position: relative;

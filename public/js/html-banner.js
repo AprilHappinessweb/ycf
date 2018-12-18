@@ -1,5 +1,5 @@
 //一 广告图部分
-function banner() {
+(() => {
     var banner = document.querySelector("div.banner");
     var bannerLis = document.querySelectorAll(".banner-list ul li");
     var prevLeft = document.querySelector("div.prev-left");
@@ -65,9 +65,8 @@ function banner() {
     prevRight.onclick = function () {
         t();
     }
-}
-//二 数据展示部分
-function datashow() {
+
+    //二 数据展示部分
     var dataspans = document.querySelectorAll(".index-data ul span");
     var val1 = parseInt(dataspans[0].innerHTML.split(",").join(""));
     var val2 = parseInt(dataspans[1].innerHTML.split(",").join(""));
@@ -120,7 +119,4 @@ function datashow() {
     var t1 = setInterval(change1, 2);
     var t2 = setInterval(change2, 2);
     var t3 = setInterval(change3, 2);
-
-}
-banner();
-datashow();
+})()

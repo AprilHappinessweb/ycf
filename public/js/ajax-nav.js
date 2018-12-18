@@ -5,7 +5,7 @@
     type:"get"
     })
     .then(res=>{
-    var header=document.querySelector("nav")
-    header.innerHTML=res;
+    var nav=document.querySelector("nav")
+    nav.innerHTML=res;
     });
 })();
